@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-09-17T11:01:31-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">CIT480 - Senior Design</title><subtitle>Write an awesome description for your new site here. You can edit this line in _config.yml. It will appear in your document head meta (for Google search results) and in your feed.xml site description.</subtitle><entry><title type="html">Blog 1 - Docker</title><link href="http://localhost:4000/docker/blog/2021/08/28/Blog1-docker.html" rel="alternate" type="text/html" title="Blog 1 - Docker" /><published>2021-08-28T12:06:20-07:00</published><updated>2021-08-28T12:06:20-07:00</updated><id>http://localhost:4000/docker/blog/2021/08/28/Blog1-docker</id><content type="html" xml:base="http://localhost:4000/docker/blog/2021/08/28/Blog1-docker.html">&lt;h1 id=&quot;what-is-docker&quot;&gt;What is Docker?&lt;/h1&gt;
+&lt;p&gt;Is a type of Virtualization. 
+…..&lt;/p&gt;
+
+&lt;h1 id=&quot;some-basic-commands&quot;&gt;Some basic commands&lt;/h1&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Pull image
+docker pull &amp;lt;image name&amp;gt;
+
+# Pull Ubuntu 16.04
+docker pull ubuntu:16.04
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Docker run with port mapping
+` docker run -p 8080:80 ubuntu:16.04 /bin/bash`
+This command maps local port 8080 to port 80 inside the container&lt;/p&gt;
+
+&lt;p&gt;Tag your docker image:
+` docker run –name &lt;name of=&quot;&quot; container=&quot;&quot;&gt; -p 8080:80 ubuntu:16.04 /bin/bash`&lt;/name&gt;&lt;/p&gt;</content><author><name></name></author><category term="docker" /><category term="blog" /><summary type="html">What is Docker? Is a type of Virtualization. …..</summary></entry><entry><title type="html">Blog 2 - Prometheus</title><link href="http://localhost:4000/prometheus/blog/2021/08/28/Blog2.html" rel="alternate" type="text/html" title="Blog 2 - Prometheus" /><published>2021-08-28T12:06:20-07:00</published><updated>2021-08-28T12:06:20-07:00</updated><id>http://localhost:4000/prometheus/blog/2021/08/28/Blog2</id><content type="html" xml:base="http://localhost:4000/prometheus/blog/2021/08/28/Blog2.html">&lt;h1 id=&quot;what-is-prometheus&quot;&gt;What is Prometheus?&lt;/h1&gt;
+&lt;p&gt;It’s a monitoring tool. 
+…..&lt;/p&gt;</content><author><name></name></author><category term="prometheus" /><category term="blog" /><summary type="html">What is Prometheus? It’s a monitoring tool. …..</summary></entry><entry><title type="html">Blog 0 - Git Basics</title><link href="http://localhost:4000/git/blog/2021/08/24/Blog0-git-basics.html" rel="alternate" type="text/html" title="Blog 0 - Git Basics" /><published>2021-08-24T12:06:20-07:00</published><updated>2021-08-24T12:06:20-07:00</updated><id>http://localhost:4000/git/blog/2021/08/24/Blog0-git-basics</id><content type="html" xml:base="http://localhost:4000/git/blog/2021/08/24/Blog0-git-basics.html">&lt;h1 id=&quot;what-is-git&quot;&gt;What is Git?&lt;/h1&gt;
+&lt;p&gt;Git is an Open Source Distributed Version Control System. Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.&lt;/p&gt;
+
+&lt;h1 id=&quot;what-is-github&quot;&gt;What is Github?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;http://github.com&quot;&gt;GitHub&lt;/a&gt; is designed as a Git repository hosting service. It’s an online database that allows you to keep track of and share your Git version control projects outside of your local computer/server. In addition, Github provides many of it’s own features.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Git Commands&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git status&lt;/code&gt; command is used to see a summary of which files have changes that are staged or unstaged for a commit. Untracked files are also listed with the git status command.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git checkout&lt;/code&gt; command switches between branches or restores working tree files.&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Checkout an existing branch named main
+git checkout main
+
+# Checkout a new branch named update-package
+git checkout -b update-package
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git add&lt;/code&gt; adds new or changed files into your&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Add a single file
+git add &amp;lt;FILE NAME&amp;gt;
+
+# Add multiple files
+git add &amp;lt;FILE NAME 1&amp;gt; &amp;lt;FILE NAME 2&amp;gt; ....
+
+# Add all tracked and untracked files
+git add .
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git commit&lt;/code&gt; save changes to local repository&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;# Commit with message
+git commit -m &quot;Commit message goes here&quot;
+
+# Stage and commit tracked files
+git commit -am &quot;Commit message goes here&quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;git push&lt;/code&gt; command sends (or push) the commits from your local branch in your local Git repository to the remote repository. In our case Github.&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;git push
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name></name></author><category term="git" /><category term="blog" /><summary type="html">What is Git? Git is an Open Source Distributed Version Control System. Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development. Its goals include speed, data integrity, and support for distributed, non-linear workflows.</summary></entry><entry><title type="html">Weekly Blogs</title><link href="http://localhost:4000/blog/2021/08/24/weekly-blogs.html" rel="alternate" type="text/html" title="Weekly Blogs" /><published>2021-08-24T12:06:20-07:00</published><updated>2021-08-24T12:06:20-07:00</updated><id>http://localhost:4000/blog/2021/08/24/weekly-blogs</id><content type="html" xml:base="http://localhost:4000/blog/2021/08/24/weekly-blogs.html">&lt;p&gt;Blog’s are due Every Friday by 11:59pm for both Fall and Spring semester. Canvas assignments will open each week on Wednesday @ 12:00am and close on Friday’s at 11:59pm. Be sure to post a link to your weekly blog post not to your main For example, I have another blog post and the url I would submit on canvas would be:
+&lt;a href=&quot;https://lisasmith1.github.io/git/blog/2021/08/24/Blog0-git-basics.html&quot;&gt;https://lisasmith1.github.io/git/blog/2021/08/24/Blog0-git-basics.html&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><category term="blog" /><summary type="html">Blog’s are due Every Friday by 11:59pm for both Fall and Spring semester. Canvas assignments will open each week on Wednesday @ 12:00am and close on Friday’s at 11:59pm. Be sure to post a link to your weekly blog post not to your main For example, I have another blog post and the url I would submit on canvas would be: https://lisasmith1.github.io/git/blog/2021/08/24/Blog0-git-basics.html</summary></entry><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/jekyll/update/2020/09/03/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-09-03T12:06:20-07:00</published><updated>2020-09-03T12:06:20-07:00</updated><id>http://localhost:4000/jekyll/update/2020/09/03/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2020/09/03/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.&lt;/p&gt;
+
+&lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/p&gt;
+
+&lt;p&gt;Jekyll also offers powerful support for code snippets:&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Tom&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints &apos;Hi, Tom&apos; to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://localhost:4000/assets/images/jack.jpg&quot; alt=&quot;useful image&quot; /&gt;&lt;/p&gt;</content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.</summary></entry></feed>
